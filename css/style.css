@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .info {
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    background: linear-gradient(to bottom right, #288AC9, #AFD0E3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header .info .info-container {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    color: white;
+}
+
+.info .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .info-container .info-location .city {
+    font-size: 3rem;
+}
+
+.header .info .info-container .degree {
+    font-size: 8rem;
+    margin: 0 2rem;
+}
+
+.header .info .info-container .time {
+    font-size: 1.4rem;
+}
+
+.header .locations {
+    width: 40%;
+    height: 100%;
+}
+
+/* info */
+
+.locations {
+    position: relative;
+    background: linear-gradient(to bottom right, #2A5F86, #5E7785);
+    padding: 3rem;
+}
+
+.locations form {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    background-color: inherit;
+}
+
+.locations form input {
+    width: 75%;
+    height: 100%;
+    outline: none;
+    font-size: 1.3rem;
+    padding: 0 .5rem;
+    border: none;
+    border-bottom: 1px solid #8EA9BE;
+    /* background-color: aqua; */
+    background-color: inherit;
+    color: white;
+}
+
+.locations form input::placeholder {
+    color: #8EA9BE;
+}
+
+/* .locations form button {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    background-color: inherit;
+    font-size: 1.2rem;
+    border: 1px solid black;
+} */
+
+#cities {
+    width: 100%;
+    height: calc(100% - 3rem);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0;
+    border: none;
+    background: #A9CEE1;
+    cursor: pointer;
+}
+
+#search-btn i {
+    font-size: 2rem;
+}
+
+#cities li {
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    /* background-color: aqua; */
+    background-color: inherit;
+    /* border-bottom: 1px solid black; */
+    cursor: pointer;
+    color: #95B2C8;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.country-info p {
+    padding: .7rem 0;
+    color: #8EA9BE;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    background: #8EA9BE;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.details .title {
+    margin: 1rem 0;
+    color: white;
+}
+
+.details .detail {
+    margin: .5rem 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8EA9BE;
+}
+
+.details .detail p:last-child {
+    color: white;
+}
