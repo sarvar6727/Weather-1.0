@@ -68,14 +68,14 @@
     padding: 3rem;
 }
 
-.locations form {
+.locations .form {
     width: 100%;
     height: 3rem;
     display: flex;
     background-color: inherit;
 }
 
-.locations form input {
+.locations .form input {
     width: 75%;
     height: 100%;
     outline: none;
@@ -88,18 +88,9 @@
     color: white;
 }
 
-.locations form input::placeholder {
+.locations .form input::placeholder {
     color: #8EA9BE;
 }
-
-/* .locations form button {
-    width: 25%;
-    height: 100%;
-    background-color: aqua;
-    background-color: inherit;
-    font-size: 1.2rem;
-    border: 1px solid black;
-} */
 
 #cities {
     width: 100%;
@@ -177,4 +168,9 @@
 
 .details .detail p:last-child {
     color: white;
+}
+
+#img {
+    width: 6rem;
+    margin: 0 1rem;
 }
