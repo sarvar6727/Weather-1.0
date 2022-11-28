@@ -24,15 +24,19 @@ getData('Samarkand');
 
 
 async function getData(city){
-    const response = await fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${city}`, options)
-    const data = await response.json();
-    console.log(data)
-    region.textContent = data.location.region;
-	country.textContent = data.location.country;
-	cityName.textContent = data.location.region;
-	degree.textContent = data.current.temp_c + '°';
-	timeText.textContent = `${days[d.getDay()]}, ${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`
-	img.src = data.current.condition.icon
+	try{
+		const response = await fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${city}`, options)
+		const data = await response.json();
+		console.log(data)
+		region.textContent = data.location.region;
+		country.textContent = data.location.country;
+		cityName.textContent = data.location.region;
+		degree.textContent = data.current.temp_c + '°';
+		timeText.textContent = `${days[d.getDay()]}, ${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`
+		img.src = data.current.condition.icon
+	}catch(err){
+		alert('City is not found!')
+	}
 }
 
 input.addEventListener('keydown', (e) => {

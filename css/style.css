@@ -22,6 +22,8 @@
     height: 100%;
     /* background-color: aqua; */
     background: linear-gradient(to bottom right, #288AC9, #AFD0E3);
+    /* background: url('../images/bg.jpg') no-repeat;
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     align-items: center;
